@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "owner": "danieldozie",
+    "name": "Bloom Community",
+    "slug": "bloom-community",
+    "version": "1.0.1-alpha",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "userInterfaceStyle": "automatic",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": [
+        "expo.ts",
+        "expo.tsx",
+        "expo.js",
+        "expo.jsx",
+        "ts",
+        "tsx",
+        "js",
+        "jsx",
+        "json",
+        "wasm",
+        "svg"
+      ]
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.bloomcomm.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "package": "com.bloomcomm.app"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8e057db9-8be1-4c99-b837-a9a44dbee848"
+      }
+    }
+  }
+}
