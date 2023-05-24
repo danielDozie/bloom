@@ -1,8 +1,8 @@
 {
   "expo": {
     "owner": "danieldozie",
-    "name": "Bloom Community",
-    "slug": "bloom-community",
+    "name": "Bloom",
+    "slug": "bloom",
     "version": "1.0.1-alpha",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -17,6 +17,9 @@
     },
     "assetBundlePatterns": [
       "**/*"
+    ],
+    "plugins": [
+      "react-native-background-fetch"
     ],
     "packagerOpts": {
       "config": "metro.config.js",
@@ -36,17 +39,26 @@
     },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.bloomcomm.app"
+      "bundleIdentifier": "com.bloomcomm.app",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "fetch",
+          "processing"
+        ],
+        "BGTaskSchedulerPermittedIdentifiers": [
+          "com.transistorsoft.fetch"
+        ]
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "android": {
-      "package": "com.bloomcomm.app"
+      "package": "com.bloom.app"
     },
     "extra": {
       "eas": {
-        "projectId": "8e057db9-8be1-4c99-b837-a9a44dbee848"
+        "projectId": "2b55d608-bb92-4120-aaab-e717c6cdf347"
       }
     }
   }
