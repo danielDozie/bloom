@@ -16,6 +16,5 @@ export function useLogin(
       ...options,
     },
   );
-
   return { login, loading, error };
 }

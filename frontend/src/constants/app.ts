@@ -1,7 +1,5 @@
-import { MOBILE_PROSE_PORT } from '@env';
+import { MOBILE_PROSE_HOST, MOBILE_PROSE_PORT } from '@env';
 import Constants from 'expo-constants';
-
-const MOBILE_PROSE_HOST = "https://740f-102-88-62-89.ngrok-free.app/";
 
 const { manifest } = Constants;
 

@@ -51,7 +51,6 @@
     "react-native": "0.71.8",
     "react-native-auto-grow-textinput": "^1.2.1",
     "react-native-background-fetch": "^4.1.10",
-    "react-native-custom-tabs": "^0.1.7",
     "react-native-device-info": "^10.6.0",
     "react-native-dotenv": "^3.3.1",
     "react-native-draggable-flatlist": "^4.0.1",

@@ -16,7 +16,7 @@ export let loginMutationResolver: FieldResolver<'Mutation', 'login'> = async (
       secondFactorToken,
     });
   } catch (error) {
-    throw new Error(`LoginError: ${error.message}`);
+    throw new Error(`LoginError: ${error}`);
   }
 };
 

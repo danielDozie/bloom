@@ -28,6 +28,8 @@ import firebase from './screens/firebase/helper';
 import bgMessaging from './screens/firebase/bgMessaging';
 import BackgroundFetch from 'react-native-background-fetch';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+// import RootViewBackgroundColor from 'react-native-root-view-background-color';
+// import { CustomTabs } from 'react-native-custom-tabs';
 import * as WebBrowser from 'expo-web-browser';
 import { addShortcutListener } from 'react-native-siri-shortcut';
 import { enableScreens } from 'react-native-screens';
@@ -471,6 +473,13 @@ class Discourse extends React.Component {
     if (Platform.OS === 'android') {
       AsyncStorage.getItem('@Discourse.androidCustomTabs').then(value => {
         if (value) {
+          // CustomTabs.openURL(url, {
+          //   enableUrlBarHiding: true,
+          //   showPageTitle: false,
+          // }).catch(err => {
+          //   console.error(err);
+          // });
+
           //changed CustomTabs to Expo Browser
           (async () => {
             await WebBrowser.openBrowserAsync(url);
